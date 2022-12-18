@@ -1,2 +1,2 @@
-# Counter built using Vite ReactTS
+# Counter built with Vite & ReactTS
 # Also store the count in local storage.
