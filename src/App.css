@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: rgb(8, 30, 88);
+}
+
+span {
+  color: green;
+  font-size: 3rem;
+}
+
+.buttons button {
+  margin-inline: 3px;
+  margin-top: 2rem;
+  color: black;
+  outline: none;
+  border: 1px solid black;
+  background-color: transparent;
+}
+
+.buttons button:hover {
+  border-color: blue;
+}
+
+.buttons button:active {
+  background-color: #dbebe9;
+}
+
