@@ -10,19 +10,19 @@ function App() {
     localStorage.setItem("count", newCount.toString());
   } 
 
-  const handleDecrease = () => {
-    const newCount = count - 1
+  const handleDecrease = (amount: number) => {
+    const newCount = count - amount
     setCount(newCount)
     saveCount(newCount);
   }
 
-  const handleReset = () => {
+  const handleReset = () => { 
     setCount(0)
     saveCount(0);
   }
 
-  const handleIncrease = () => {
-    const newCount = count + 1
+  const handleIncrease = (amount: number) => {
+    const newCount = count + amount
     setCount(newCount)
     saveCount(newCount);
   }
@@ -33,9 +33,11 @@ function App() {
         <h1>Counter</h1>
         <span>{count}</span>
         <div className="buttons">
-          <button onClick={handleDecrease}>-</button>
+          <button onClick={() => handleDecrease(10)}> -10 </button>
+          <button onClick={() => handleDecrease(1)}> - </button>
           <button onClick={handleReset}>RESET</button>
-          <button onClick={handleIncrease}>+</button>
+          <button onClick={() => handleIncrease(1)}> + </button>
+          <button onClick={() => handleIncrease(10)}> +10 </button>
         </div>
       </div>
     </div>
